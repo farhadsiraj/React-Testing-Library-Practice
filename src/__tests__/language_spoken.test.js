@@ -48,7 +48,7 @@ test("correctly fetches a list of countries", async () => {
     status: "MOCK",
     data: [{ name: "CodeLand", capital: "Codecademy" }],
   };
-  // TODO: Mock the first resolved value of httpRequest
+
   httpRequest.mockResolvedValueOnce(resolvedValue);
   //act
   const actualValue = await countryListLookup(inputLanguageCode);

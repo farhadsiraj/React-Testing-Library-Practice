@@ -60,7 +60,6 @@ test("Should show Thought to be removed", async () => {
   userEvent.type(input, "I have to call my mom.");
   userEvent.click(submit);
 
-  // fix this logic!
   await waitFor(() => {
     const thought = screen.queryByText("I have to call my mom.");
     expect(thought).toBeNull();
